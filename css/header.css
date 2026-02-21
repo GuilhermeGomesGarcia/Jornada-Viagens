@@ -1,12 +1,42 @@
 .cabecalho {
+  align-items: center;
   background-color: var(--background-tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  /* 
+        esse align-items é necessário para que os itens dentro do cabeçalho sejam alinhados verticalmente 
+        ao centro. Sem esse alinhamento, os itens podem ficar desalinhados e não parecerem visualmente equilibrados dentro do cabeçalho. 
+    */
   height: 8.625rem; /* 138px */
+  padding: 38px 48px;
   width: 100%;
 }
 
 .cabecalho__logo {
   display: inline-block;
+  /* 
+    esse display é necessário para que a imagem seja tratada como um elemento de linha, permitindo que ela se alinhe corretamente dentro do contêiner flexível do cabeçalho. Sem esse display, a imagem pode ser tratada como um elemento de bloco, o que pode causar problemas de alinhamento e layout dentro do cabeçalho. 
+  */
   height: 64px;
   width: 68px;
 }
 
+.cabecalho__menu-hamburguer {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin-top: 16px;
+  /* 
+    16px é a metade da diferença entre a altura do cabeçalho (138px) e a altura do ícone de menu (32px), garantindo que o ícone fique centralizado verticalmente dentro do cabeçalho. 
+  */
+}
+
+.cabecalho__menu-hamburguer__nav {
+  display: none;
+  /* position: absolute;
+    top: 8.625rem; /* 138px
+    right: 0;
+    background-color: var(--background-tertiary-color);
+    width: 100%;
+    height: calc(100vh - 8.625rem); altura total da tela menos a altura do cabeçalho */
+}
