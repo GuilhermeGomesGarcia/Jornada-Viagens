@@ -38,17 +38,17 @@
   --font-size-title-large: 2.5rem;
   --font-size-title-extra-large: 3rem;
 
-  /* PADDING */
+  /* PADDING
   --padding-small: 0.5rem;
   --padding-medium: 1rem;
   --padding-large: 1.5rem;
   --padding-extra-large: 2rem;
 
-  /* MARGIN */
+  /* MARGIN 
   --margin-small: 0.5rem;
   --margin-medium: 1rem;
   --margin-large: 1.5rem;
-  --margin-extra-large: 2rem;
+  --margin-extra-large: 2rem; */
 }
 
 /*  CSS RESET */
