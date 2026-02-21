@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+/*  GLOBAL VARIABLES */
+
+:root {
+  /* COLORS */
+  --primary-color: #8f0101;
+  --secondary-color: #b81515;
+
+  /* BG COLORS */
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
+
+  /* TEXT COLORS */
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
+
+  /* FONT FAMILY */
+  --font-family-primary: "Montserrat", sans-serif;
+
+  /* FONTS WEIGHTS*/
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* FONTS SIZES */
+  --font-size-mobile: 1rem;
+  --font-size-text: 1.25rem;
+  --font-size-heading: 1.5rem;
+  --font-size-subheading: 1.75rem;
+  --font-size-title-small: 2rem;
+  --font-size-title-large: 2.5rem;
+  --font-size-title-extra-large: 3rem;
+
+  /* PADDING
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+  --padding-extra-large: 2rem;
+
+  /* MARGIN 
+  --margin-small: 0.5rem;
+  --margin-medium: 1rem;
+  --margin-large: 1.5rem;
+  --margin-extra-large: 2rem; */
+}
+
+/*  CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li,
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary-color);
+}
