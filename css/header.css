@@ -31,6 +31,11 @@
   */
 }
 
+#cabecalho__menu-hamburguer-checkbox:checked
+  ~ .cabecalho__menu-hamburguer__nav {
+  display: block;
+}
+
 .cabecalho__menu-hamburguer__nav {
   display: none;
   /* position: absolute;
