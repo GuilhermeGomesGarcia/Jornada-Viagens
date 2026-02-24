@@ -25,8 +25,8 @@
 .cabecalho__menu-hamburguer {
   display: inline-block;
   height: 32px;
-  width: 32px;
   margin-top: 16px;
+  width: 32px;
   /* 
     16px é a metade da diferença entre a altura do cabeçalho (138px) e a altura do ícone de menu (32px), garantindo que o ícone fique centralizado verticalmente dentro do cabeçalho. 
   */
@@ -34,11 +34,11 @@
 
 #cabecalho__menu-hamburguer-checkbox:checked
   ~ .cabecalho__menu-hamburguer__nav {
+  background-color: var(--background-tertiary-color);
   display: block;
+  left: 0;
   position: absolute;
   top: 100%;
-  left: 0;
-  background-color: var(--background-tertiary-color);
   width: 100%;
 }
 
@@ -47,13 +47,42 @@
 }
 
 .cabecalho__menu-hamburguer__lista {
-  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.cabecalho__menu-hamburguer__lista li {
+  margin: 1rem 0;
 }
 
 .cabecalho__menu-hamburguer__lista li a {
   color: var(--text-secondary-color);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-heading);
 }
 
+@media screen and (min-width: 768px) {
+
+  .cabecalho__menu-hamburguer {
+    margin-top: 0;
+    width: 29.188rem; /* 467px */
+  }
+
+  .cabecalho__menu-hamburguer__label {
+    display: none;
+  }
+
+  .cabecalho__menu-hamburguer__nav {
+    display: block;
+  }
+
+  .cabecalho__menu-hamburguer__lista {
+    padding: 0;
+  }
+  
+  .cabecalho__menu-hamburguer__lista li {
+    margin: 0;
+  }
+}
