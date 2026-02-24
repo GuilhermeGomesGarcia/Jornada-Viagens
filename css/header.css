@@ -47,10 +47,10 @@
 }
 
 .cabecalho__menu-hamburguer__lista {
-  align-items: center;
+  /* align-items: center;
   display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
+  justify-content: space-between; */
+  padding: 0 1rem;
 }
 
 .cabecalho__menu-hamburguer__lista li {
@@ -86,11 +86,9 @@
   }
 
   .cabecalho__menu-hamburguer__lista {
-    padding: 0;
-  }
-
-  .cabecalho__menu-hamburguer__lista li {
-    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -110,6 +108,10 @@
   .cabecalho__logo {
     height: 64px;
     width: 260px;
+  }
+
+  .cabecalho__menu-hamburguer__lista li {
+    margin: 0;
   }
 
   .logo__mobile {
