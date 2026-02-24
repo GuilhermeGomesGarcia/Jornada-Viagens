@@ -10,6 +10,7 @@
   height: 8.625rem; /* 138px */
   padding: 38px 48px;
   width: 100%;
+  position: relative;
 }
 
 .cabecalho__logo {
@@ -24,19 +25,112 @@
 .cabecalho__menu-hamburguer {
   display: inline-block;
   height: 32px;
-  width: 32px;
   margin-top: 16px;
+  width: 32px;
   /* 
     16px é a metade da diferença entre a altura do cabeçalho (138px) e a altura do ícone de menu (32px), garantindo que o ícone fique centralizado verticalmente dentro do cabeçalho. 
   */
 }
 
+#cabecalho__menu-hamburguer-checkbox:checked
+  ~ .cabecalho__menu-hamburguer__nav {
+  background-color: var(--background-tertiary-color);
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
 .cabecalho__menu-hamburguer__nav {
   display: none;
-  /* position: absolute;
-    top: 8.625rem; /* 138px
-    right: 0;
-    background-color: var(--background-tertiary-color);
-    width: 100%;
-    height: calc(100vh - 8.625rem); altura total da tela menos a altura do cabeçalho */
+}
+
+.cabecalho__menu-hamburguer__lista {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.cabecalho__menu-hamburguer__lista li {
+  margin: 1rem 0;
+}
+
+.cabecalho__menu-hamburguer__lista li a {
+  color: var(--text-secondary-color);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-heading);
+}
+
+.logo__mobile {
+  display: block;
+}
+
+.logo__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho__menu-hamburguer {
+    margin-top: 0;
+    width: 29.188rem; /* 467px */
+  }
+
+  .cabecalho__menu-hamburguer__label {
+    display: none;
+  }
+
+  .cabecalho__menu-hamburguer__nav {
+    display: block;
+  }
+
+  .cabecalho__menu-hamburguer__lista {
+    padding: 0;
+  }
+
+  .cabecalho__menu-hamburguer__lista li {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    padding: 38px 120px;
+  }
+
+  .cabecalho a:hover {
+    color: var(--primary-color);
+  }
+
+  .cabecalho a:focus {
+    text-decoration: underline;
+  }
+
+  .cabecalho__logo {
+    height: 64px;
+    width: 260px;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .cabecalho {
+    padding: 38px 160px;
+  }
+
+  .cabecalho__menu-hamburguer {
+    width: 50rem; /* 467px */
+  }
+
+  .cabecalho__menu-hamburguer__lista li a {
+    font-size: var(--font-size-title-small);
+  }
 }
