@@ -10,6 +10,7 @@
   height: 8.625rem; /* 138px */
   padding: 38px 48px;
   width: 100%;
+  position: relative;
 }
 
 .cabecalho__logo {
@@ -34,14 +35,25 @@
 #cabecalho__menu-hamburguer-checkbox:checked
   ~ .cabecalho__menu-hamburguer__nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-tertiary-color);
+  width: 100%;
 }
 
 .cabecalho__menu-hamburguer__nav {
   display: none;
-  /* position: absolute;
-    top: 8.625rem; /* 138px
-    right: 0;
-    background-color: var(--background-tertiary-color);
-    width: 100%;
-    height: calc(100vh - 8.625rem); altura total da tela menos a altura do cabeçalho */
 }
+
+.cabecalho__menu-hamburguer__lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+.cabecalho__menu-hamburguer__lista li a {
+  color: var(--text-secondary-color);
+}
+
