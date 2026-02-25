@@ -32,8 +32,8 @@
   /* FONTS SIZES */
   --font-size-mobile: 1rem;
   --font-size-text: 1.25rem;
-  --font-size-heading: 1.5rem;
-  --font-size-subheading: 1.75rem;
+  --font-size-subheading: 1.5rem;
+  --font-size-heading: 1.75rem;
   --font-size-title-small: 2rem;
   --font-size-title-large: 2.5rem;
   --font-size-title-extra-large: 3rem;
@@ -69,4 +69,30 @@ ul {
 body {
   font-family: var(--font-family-primary);
   color: var(--text-primary-color);
+}
+
+
+.secao__titulo h2{
+  text-align: center;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.secao__titulo hr{
+  height: 4px;
+  width: 11.25rem;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 1rem auto 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .secao__titulo h2{
+    font-size: var(--font-size-title-small);
+  }
+
+  .secao__titulo hr{
+    width: 13.25rem;
+  }
+  
 }

@@ -60,7 +60,7 @@
 .cabecalho__menu-hamburguer__lista li a {
   color: var(--text-secondary-color);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-heading);
+  font-size: var(--font-size-subheading);
 }
 
 .logo__mobile {
