@@ -38,7 +38,7 @@
   display: block;
   left: 0;
   position: absolute;
-  top: 100%;
+  top: 99%;
   width: 100%;
 }
 
@@ -47,20 +47,20 @@
 }
 
 .cabecalho__menu-hamburguer__lista {
-  /* align-items: center;
+  align-items: center;
   display: flex;
-  justify-content: space-between; */
+  justify-content: space-between;
   padding: 0 1rem;
 }
 
 .cabecalho__menu-hamburguer__lista li {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .cabecalho__menu-hamburguer__lista li a {
   color: var(--text-secondary-color);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-heading);
+  font-size: var(--font-size-subheading);
 }
 
 .logo__mobile {
@@ -71,6 +71,12 @@
   display: none;
 }
 
+@media screen and (max-width: 500px) {
+  .cabecalho__menu-hamburguer__lista {
+    display: block;
+    padding: 0 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .cabecalho__menu-hamburguer {
     margin-top: 0;
