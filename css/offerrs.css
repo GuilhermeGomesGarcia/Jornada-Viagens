@@ -73,8 +73,7 @@
 
 @media screen and (min-width: 768px) {
   .ofertas__cards {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
   }
 }
@@ -95,11 +94,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .ofertas__cards{
+  .ofertas__cards {
     row-gap: 50px;
   }
-  
-    .ofertas__card {
+
+  .ofertas__card {
     width: 550px;
     height: 350px;
   }
@@ -110,3 +109,4 @@
     width: 1250px;
     margin: 0 auto;
   }
+}
