@@ -1,0 +1,41 @@
+.destino__imagem-tokyo {
+  background: url("../img/Tokyo-mobile.jpg") no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 312px;
+  margin-bottom: 24px;
+}
+
+.destino__imagem-osaka {
+  background: url("../img/Osaka-mobile.jpg") no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 312px;
+  margin: 40px 0 24px 0;
+}
+
+.destino__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.destino__item-titulo {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.destino__item-texto {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-regular);
+  line-height: 32px;
+  margin-top: 24px;
+  height: 224px;
+  width: 312px;
+}
+
+.destino__rodape .botao {
+  margin-top: 24px;
+  text-align: center;
+}
