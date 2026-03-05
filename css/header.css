@@ -25,10 +25,10 @@
 .cabecalho__menu-hamburguer {
   display: inline-block;
   height: 32px;
-  margin-top: 16px;
+  margin-top: 24px;
   width: 32px;
   /* 
-    16px é a metade da diferença entre a altura do cabeçalho (138px) e a altura do ícone de menu (32px), garantindo que o ícone fique centralizado verticalmente dentro do cabeçalho. 
+    esse margin-top é para tirar a diferença entre a altura do cabeçalho (138px) e a altura do ícone de menu (32px), garantindo que o ícone fique centralizado verticalmente dentro do cabeçalho. 
   */
 }
 

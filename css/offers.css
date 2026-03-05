@@ -7,7 +7,6 @@
 
 .ofertas__card {
   height: 288px;
-  width: 312px;
   padding: 24px 16px;
   box-sizing: border-box;
   border-radius: 16px;
@@ -133,7 +132,7 @@
 
 @media screen and (min-width: 1024px) {
   .ofertas__card {
-    width: 450px;
+    width: 380px;
     height: 300px;
   }
 

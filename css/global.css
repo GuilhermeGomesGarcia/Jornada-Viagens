@@ -70,6 +70,16 @@ body {
   color: var(--text-primary-color);
 }
 
+section {
+  width: 312px;
+  margin: 0 auto 68px;
+}
+
+section.hero {
+  width: 100%;
+  margin: 0;
+}
+
 .secao__titulo h2 {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
@@ -98,6 +108,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  section {
+    width: 648px;
+  }
+
   .secao__titulo h2 {
     font-size: var(--font-size-title-small);
   }
@@ -108,8 +122,18 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  section {
+    width: 900px;
+  }
+
   .botao:hover {
     background-color: var(--secondary-color);
     transition: background-color 0.3s ease;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1200px;
   }
 }

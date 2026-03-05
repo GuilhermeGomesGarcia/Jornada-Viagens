@@ -1,13 +1,8 @@
-.categorias__cards{
+.categorias__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-}
-
-.categorias .secao__titulo {
-  width: 312px;
-  margin: 0 auto;
 }
 
 .categorias__card :nth-child(1) {
@@ -58,26 +53,25 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .categorias__cards{
-    flex-wrap: wrap;
+  .categorias__cards {
+    /* margin: 0 80px; */
+    gap: 3rem 1.5rem;
   }
 
-  .categorias__card{
-    width: 400px;
+  .categorias__card {
+    width: 350px;
     height: 250px;
   }
 }
 
-@media screen and (min-width: 1240px) {
-  .categorias__cards{
+/* @media screen and (min-width: 1240px) {
+  .categorias__cards {
     flex-wrap: nowrap;
-    margin: 0 20px;
   }
-}
+} */
 
 @media screen and (min-width: 1440px) {
   .categorias__card {
     width: 281.25px;
   }
-  
 }
