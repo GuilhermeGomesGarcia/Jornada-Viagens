@@ -23,34 +23,12 @@
   z-index: 1;
 }
 
-.ofertas__card.japao::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
 .ofertas__card.san-andreas {
   background: url("../img/bg-card-san-andreas.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 1;
-}
-
-.ofertas__card.san-andreas::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
 }
 
 .ofertas__card.paraiba {
@@ -61,17 +39,6 @@
   z-index: 1;
 }
 
-.ofertas__card.paraiba::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
 .ofertas__card.manaus {
   background: url("../img/bg-card-manaus.jpg") no-repeat;
   background-size: cover;
@@ -79,7 +46,9 @@
   position: relative;
   z-index: 1;
 }
-
+.ofertas__card.japao::before,
+.ofertas__card.san-andreas::before,
+.ofertas__card.paraiba::before,
 .ofertas__card.manaus::before {
   content: "";
   position: absolute;
