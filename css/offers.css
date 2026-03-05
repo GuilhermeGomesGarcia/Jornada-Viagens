@@ -7,7 +7,6 @@
 
 .ofertas__card {
   height: 288px;
-  width: 312px;
   padding: 24px 16px;
   box-sizing: border-box;
   border-radius: 16px;
@@ -20,23 +19,45 @@
   background: url("../img/bg-card-japao.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 1;
 }
 
 .ofertas__card.san-andreas {
   background: url("../img/bg-card-san-andreas.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 1;
 }
 
 .ofertas__card.paraiba {
   background: url("../img/bg-card-paraiba.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
 }
 
 .ofertas__card.manaus {
   background: url("../img/bg-card-manaus.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.ofertas__card.japao::before,
+.ofertas__card.san-andreas::before,
+.ofertas__card.paraiba::before,
+.ofertas__card.manaus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .ofertas__card-cabecalho {
@@ -80,7 +101,7 @@
 
 @media screen and (min-width: 1024px) {
   .ofertas__card {
-    width: 450px;
+    width: 380px;
     height: 300px;
   }
 
