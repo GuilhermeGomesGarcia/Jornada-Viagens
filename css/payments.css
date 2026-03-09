@@ -15,18 +15,66 @@
 }
 
 .mala {
-  background: url("../img/pagamentos-01.png") no-repeat;
+  background: url("../img/pagamentos-mala-mobile.png") no-repeat;
   background-size: cover;
 }
 
 .passaporte {
-  background: url("../img/pagamentos-02.png") no-repeat;
+  background: url("../img/pagamentos-passaporte-mobile.png") no-repeat;
   background-size: cover;
 }
 
 .pessoas {
-  background: url("../img/pagamentos-03.png") no-repeat;
+  background: url("../img/pagamentos-pessoas-mobile.png") no-repeat;
   background-size: cover;
   height: 182px;
   grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .mala {
+    background: url("../img/pagamentos-mala-tablet.png") no-repeat;
+    background-size: cover;
+  }
+
+  .passaporte {
+    background: url("../img/pagamentos-passaporte-tablet.png") no-repeat;
+    background-size: cover;
+  }
+
+  .pessoas {
+    background: url("../img/pagamentos-pessoas-tablet.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pagamentos__imagem {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pagamentos__conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .pagamentos__descricao {
+    width: 400px;
+  }
+
+  .pagamentos__imagens {
+    width: 65%;
+    height: 460px;
+  }
+
+  .pagamentos__descricao .descricao__texto {
+    font-size: var(--font-size-subheading);
+  }
+
+  .pagamentos__descricao .descricao__titulo {
+    font-size: var(--font-size-title-large);
+  }
 }
