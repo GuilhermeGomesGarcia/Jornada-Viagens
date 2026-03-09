@@ -82,7 +82,7 @@ section.hero {
 
 .secao__titulo {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 46px auto;
 }
 
 .secao__titulo h2 {
@@ -94,10 +94,21 @@ section.hero {
 
 .secao__titulo hr {
   height: 4px;
-  width: 11.25rem;
+  width: 10.75rem;
   background-color: var(--secondary-color);
   border: none;
   margin: 1rem auto 2rem;
+}
+
+.descricao__titulo {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+.descricao__texto {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-regular);
+  line-height: 32px;
 }
 
 .botao {
@@ -118,7 +129,7 @@ section.hero {
     width: 648px;
   }
 
-  .secao__titulo{
+  .secao__titulo {
     width: 100%;
   }
 

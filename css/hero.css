@@ -5,13 +5,9 @@
   background-size: cover;
 }
 
-.hero-titulo {
-  padding: 5.5rem 1.5rem 0 1.5rem;
-  margin: 0;
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-text);
+.hero .descricao__texto {
+  padding: 5rem 3.4rem 1rem;
   text-align: center;
-  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -21,9 +17,9 @@
     background-size: cover;
   }
 
-  .hero-titulo {
-    padding: 5.5rem 3.75rem;
-    font-size: var(--font-size-title-small);
+  .hero .descricao__texto {
+    padding: 3.5rem 3.75rem;
+    font-size: var(--font-size-subheading);
   }
 }
 
@@ -33,13 +29,17 @@
     background-size: cover;
   }
 
-  .hero-titulo {
-    padding: 5.5rem 7.5rem;
+  .hero .descricao__texto {
+    padding: 3.5rem 7.5rem;
+    font-size: var(--font-size-title-small);
+    line-height: 46px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .hero-titulo {
-    padding: 5.5rem 10rem;
+  .hero .descricao__texto {
+    padding: 5.5rem 18rem;
+    font-size: var(--font-size-title-large);
+    line-height: 58px;
   }
 }
