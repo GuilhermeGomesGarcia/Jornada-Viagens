@@ -1,0 +1,48 @@
+.depoimentos__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.depoimentos__conteudo-cabecalho .descricao__texto {
+  font-size: var(--font-size-mobile);
+  line-height: 24px;
+}
+
+.depoimentos__conteudo-img {
+  height: 80px;
+  width: 80px;
+}
+
+.depoimentos__conteudo-rodape {
+  margin: 8px 26px 0 0;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.depoimentos__conteudo-perfil {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-bold);
+}
+
+.depoimentos__conteudo-avalicao .estrela {
+  color: var(--secondary-color);
+  font-size: var(--font-size-title-medium);
+  line-height: 42px;
+}
+
+@media screen and (min-width: 1440px) {
+  .depoimentos h2 {
+    padding: 0;
+  }
+
+  .depoimentos__conteudo {
+    flex-direction: row;
+  }
+
+  .depoimentos__conteudo-cabecalho .descricao__texto {
+    font-size: var(--font-size-text);
+    line-height: 32px;
+  }
+}
