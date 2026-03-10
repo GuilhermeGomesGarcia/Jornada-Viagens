@@ -45,7 +45,6 @@
   .pessoas {
     background: url("../img/pagamentos-pessoas-tablet-desktop.png") no-repeat;
     background-size: 100%;
-    margin-bottom: 50px;
   }
 }
 
@@ -56,10 +55,15 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .pagamentos {
+    height: 800px;
+  }
+
   .pagamentos__conteudo {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    margin-top: 64px;
   }
 
   .pagamentos__descricao {
@@ -69,6 +73,10 @@
   .pagamentos__imagens {
     width: 65%;
     height: 460px;
+  }
+
+  .pessoas {
+    height: 200px;
   }
 
   .pagamentos__descricao .descricao__texto {
