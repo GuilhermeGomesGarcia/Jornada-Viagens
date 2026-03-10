@@ -49,16 +49,16 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .pagamentos__imagem {
-    height: 50vh;
-  }
-}
-
-@media screen and (min-width: 1440px) {
   .pagamentos {
     height: 800px;
   }
 
+  .pessoas {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .pagamentos__conteudo {
     display: flex;
     justify-content: space-between;
@@ -72,11 +72,7 @@
 
   .pagamentos__imagens {
     width: 65%;
-    height: 460px;
-  }
-
-  .pessoas {
-    height: 200px;
+    height: 500px;
   }
 
   .pagamentos__descricao .descricao__texto {
