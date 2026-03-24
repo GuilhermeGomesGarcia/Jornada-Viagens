@@ -2,11 +2,11 @@
   background-color: var(--background-tertiary-color);
 }
 
-.rodape .background-img {
+/* .rodape .background-img {
   background: url("/img/rodape-mobile.png") no-repeat;
   background-size: cover;
   margin-top: 80px;
-}
+} */
 
 .rodape__conteudo {
   display: flex;
@@ -47,10 +47,10 @@
     font-size: var(--font-size-text);
   }
 
-  .rodape .background-img {
+  /* .rodape .background-img {
     background: url("/img/rodape-tablet.png") no-repeat;
     background-size: contain;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -64,8 +64,8 @@
     text-align: start;
   }
 
-  .rodape .background-img {
+  /* .rodape .background-img {
     background: url("/img/rodape-desktop.png") no-repeat;
     background-size: cover;
-  }
+  } */
 }
