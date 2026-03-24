@@ -1,22 +1,11 @@
 .rodape {
   background-color: var(--background-tertiary-color);
-}
-
-/* .rodape .background-img {
-  background: url("/img/rodape-mobile.png") no-repeat;
-  background-size: cover;
-  margin-top: 80px;
-} */
-
-.rodape__conteudo {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 8px;
-  width: 312px;
 }
 
-.rodape__conteudo .descricao__texto {
+.rodape .descricao__texto {
   color: var(--text-secondary-color);
   font-size: var(--font-size-mobile);
   margin: 8px;
@@ -32,40 +21,26 @@
   margin-top: 32px;
 }
 
-.rodape__conteudo__redes-icones img {
+.rodape__conteudo__redes img {
   width: 32px;
   height: 32px;
   margin: 16px 8px;
 }
 
 @media screen and (min-width: 768px) {
-  .rodape__conteudo {
-    width: 100%;
-  }
-
   .rodape__conteudo .descricao__texto {
     font-size: var(--font-size-text);
   }
-
-  /* .rodape .background-img {
-    background: url("/img/rodape-tablet.png") no-repeat;
-    background-size: contain;
-  } */
 }
 
 @media screen and (min-width: 1440px) {
-  .rodape__conteudo {
+  .rodape {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
   }
 
-  .rodape__conteudo__descricao{
+  .rodape__conteudo__descricao {
     text-align: start;
   }
-
-  /* .rodape .background-img {
-    background: url("/img/rodape-desktop.png") no-repeat;
-    background-size: cover;
-  } */
 }
