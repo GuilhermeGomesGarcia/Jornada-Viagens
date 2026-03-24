@@ -76,7 +76,7 @@ section {
   margin: 0 auto;
 }
 
-section.hero {
+section.hero, section.hero__rodape {
   width: 100%;
   margin: 0;
 }

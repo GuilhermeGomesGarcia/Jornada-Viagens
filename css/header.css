@@ -13,13 +13,19 @@
   position: relative;
 }
 
-.cabecalho__logo {
+.logo__mobile {
   display: inline-block;
   /* 
     esse display é necessário para que a imagem seja tratada como um elemento de linha, permitindo que ela se alinhe corretamente dentro do contêiner flexível do cabeçalho. Sem esse display, a imagem pode ser tratada como um elemento de bloco, o que pode causar problemas de alinhamento e layout dentro do cabeçalho. 
   */
   height: 64px;
   width: 68px;
+}
+
+.logo__desktop {
+  display: inline-block;
+  height: 64px;
+  width: 260px;
 }
 
 .cabecalho__menu-hamburguer {
