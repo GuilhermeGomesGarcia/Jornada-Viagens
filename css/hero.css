@@ -1,7 +1,17 @@
 .background-img {
   height: 400px;
+  width: 100%;
+}
+
+.hero .background-img {
   background: url("/img/hero-mobile.png") no-repeat;
   background-size: cover;
+}
+
+.hero__rodape .background-img {
+  background: url("/img/rodape-mobile.png") no-repeat;
+  background-size: cover;
+  margin-top: 80px;
 }
 
 .hero .descricao__texto {
@@ -10,9 +20,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .background-img {
+  .hero .background-img {
     height: 520px;
     background: url("/img/hero-tablet.png") no-repeat;
+    background-size: cover;
+  }
+
+  .hero__rodape .background-img {
+    background: url("/img/rodape-tablet.png") no-repeat;
     background-size: cover;
   }
 
@@ -23,8 +38,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .background-img {
+  .hero .background-img {
     background: url("/img/hero-desktop.png") no-repeat;
+    background-size: cover;
+  }
+
+  .hero__rodape .background-img {
+    background: url("/img/rodape-desktop.png") no-repeat;
     background-size: cover;
   }
 
