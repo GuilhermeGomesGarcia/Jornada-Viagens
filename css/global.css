@@ -19,7 +19,9 @@
 
   /* TEXT COLORS */
   --text-primary-color: #222222;
-  --text-secondary-color: #ffffff;
+  --text-secondary-color: #f8fafc;
+  --text-hover-blue-color: #39a899;
+;
 
   /* FONT FAMILY */
   --font-family-primary: "Montserrat", sans-serif;
@@ -67,8 +69,24 @@ ul {
 }
 
 body {
+  /* Gradiente linear suave do topo para a base */
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    /* Azul Petróleo Escuro (Topo) */ #1e3b3b 50%,
+    /* Azul Marinho Médio (Meio) */ #0f172a 100%
+      /* Retorno ao tom mais escuro (Base) */
+  );
+
+  /* Fixa o fundo para um efeito parallax elegante ao rolar e sem repetir */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Ajuste obrigatório de cor de texto para este fundo */
+  color: var(--text-secondary-color);
+  margin: 0;
   font-family: var(--font-family-primary);
-  color: var(--text-primary-color);
 }
 
 section {
@@ -76,7 +94,8 @@ section {
   margin: 0 auto;
 }
 
-section.hero, section.hero__rodape {
+section.hero,
+section.hero__rodape {
   width: 100%;
   margin: 0;
 }
