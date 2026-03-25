@@ -109,12 +109,38 @@
     padding: 38px 120px;
   }
 
-  .cabecalho a:hover {
-    color: var(--primary-color);
+  /* 1. Definimos o estado base do link */
+  .cabecalho a {
+    position: relative; /* Essencial: ancora a linha */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: inherit; /* Mantém a cor original do texto */
+    transition: color ease 0.3s; /* Mudei para transicionar *apenas* a cor */
   }
 
-  .cabecalho a:focus {
-    text-decoration: underline;
+  /* 2. Criamos a linha invisível (estado inicial) */
+  .cabecalho a::after {
+    content: ""; /* Pseudoelementos precisam disso */
+    position: absolute; /* Colocamos a linha *sobre* o link */
+    left: 0;
+    bottom: -5px; /* Distância da linha para o texto */
+    width: 0; /* Começa com largura zero (da esquerda) */
+    height: 2px; /* Espessura da linha */
+    background-color: var(--text-hover-blue-color); /* Sua cor de hover */
+
+    /* Esta é a transição da linha (largura e tempo) */
+    transition: width ease 0.3s;
+  }
+
+  /* 3. O estado de HOVER (quando o mouse passa) */
+  .cabecalho a:hover {
+    color: var(
+      --text-hover-blue-color
+    ); /* O texto muda de cor instantaneamente */
+  }
+
+  /* 4. O segredo: a linha cresce no hover */
+  .cabecalho a:hover::after {
+    width: 100%; /* A linha expande para 100% da largura */
   }
 
   .cabecalho__logo {
