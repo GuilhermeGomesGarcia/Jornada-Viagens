@@ -125,7 +125,7 @@
     bottom: -5px; /* Distância da linha para o texto */
     width: 0; /* Começa com largura zero (da esquerda) */
     height: 2px; /* Espessura da linha */
-    background-color: var(--text-hover-blue-color); /* Sua cor de hover */
+    background-color: var(--text-hover-blue-color); /* cor de hover */
 
     /* Esta é a transição da linha (largura e tempo) */
     transition: width ease 0.3s;

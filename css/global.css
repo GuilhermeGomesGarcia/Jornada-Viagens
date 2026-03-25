@@ -21,8 +21,6 @@
   --text-primary-color: #222222;
   --text-secondary-color: #f8fafc;
   --text-hover-blue-color: #39a899;
-;
-
   /* FONT FAMILY */
   --font-family-primary: "Montserrat", sans-serif;
 
@@ -142,6 +140,7 @@ section.hero__rodape {
   display: inline-block;
   line-height: 64px;
   text-align: center;
+  transition: filter 0.3s;
 }
 
 @media screen and (min-width: 768px) {
@@ -170,6 +169,7 @@ section.hero__rodape {
   .botao:hover {
     background-color: var(--secondary-color);
     transition: background-color 0.3s ease;
+    filter: brightness(1.3);
   }
 }
 
