@@ -39,17 +39,6 @@
   --font-size-title-large: 2.5rem;
   --font-size-title-extra-large: 3rem;
 
-  /* PADDING
-  --padding-small: 0.5rem;
-  --padding-medium: 1rem;
-  --padding-large: 1.5rem;
-  --padding-extra-large: 2rem;
-
-  /* MARGIN 
-  --margin-small: 0.5rem;
-  --margin-medium: 1rem;
-  --margin-large: 1.5rem;
-  --margin-extra-large: 2rem; */
 }
 
 /*  CSS RESET */
@@ -85,6 +74,18 @@ body {
   color: var(--text-secondary-color);
   margin: 0;
   font-family: var(--font-family-primary);
+}
+
+body.pacotes {
+  background: linear-gradient(
+    180deg,
+    #fdfdfd 0%, /* Branco-Pérola muito claro (topo) */
+    #f7f2f1 50%, /* Tom médio suave */
+    #f1e9e6 100% /* Rosa-Pálido Empoeirado (base, antes do rodapé) */
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* color: #0400fd; */
 }
 
 section {
