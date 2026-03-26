@@ -27,6 +27,30 @@
   margin: 16px 8px;
 }
 
+/* Aqui eu tentei criar um hover com a paleta 
+   de cores de cada rede social 
+*/
+
+.whatsapp:hover {
+  box-shadow:
+    0 12px 24px rgba(28, 240, 74, 0.977),
+    0 0 15px rgb(12, 164, 121);
+  transition: ease 0.3s;
+}
+
+.instagram:hover {
+  box-shadow:
+    0 12px 24px rgba(240, 148, 51, 0.977),
+    0 0 30px rgb(188, 24, 136);
+  transition: ease 0.3s;
+}
+
+.twitter:hover {
+  box-shadow:
+    0 12px 24px rgba(49, 28, 240, 0.5),
+    0 0 15px rgb(12, 164, 121);
+}
+
 @media screen and (min-width: 768px) {
   .rodape__conteudo .descricao__texto {
     font-size: var(--font-size-text);
