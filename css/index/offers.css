@@ -28,13 +28,13 @@
   box-shadow:
     0 12px 24px rgba(49, 28, 240, 0.5),
     0 0 15px rgb(12, 164, 121);
-    /* Essa escolha de cores foi no olho
+  /* Essa escolha de cores foi no olho
        acertei de primeira, me sinto realizado
     */
 }
 
 .ofertas__card.japao {
-  background: url("../img/bg-card-japao.jpg") no-repeat;
+  background: url("../../img/bg-card-japao.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -42,7 +42,7 @@
 }
 
 .ofertas__card.san-andreas {
-  background: url("../img/bg-card-san-andreas.jpg") no-repeat;
+  background: url("../../img/bg-card-san-andreas.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -50,7 +50,7 @@
 }
 
 .ofertas__card.paraiba {
-  background: url("../img/bg-card-paraiba.jpg") no-repeat;
+  background: url("../../img/bg-card-paraiba.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -58,7 +58,7 @@
 }
 
 .ofertas__card.manaus {
-  background: url("../img/bg-card-manaus.jpg") no-repeat;
+  background: url("../../img/bg-card-manaus.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
