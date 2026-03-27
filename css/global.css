@@ -80,9 +80,9 @@ body.pacotes {
   background: linear-gradient(
     180deg,
     #fdfdfd 0%, /* Branco-Pérola muito claro (topo) */
-    #F7CFE1 50%, /* Rosa-Pálido  (base, antes do rodapé) */
-    #FFB7C5 75% /* Rosa-Sakura (destino de excursão) */
-    /* #876F86 100%  */
+    #F7CFE1 20%, /* Rosa-Pálido  (base, antes do rodapé) */
+    #FFB7C5 45%, /* Rosa-Sakura (destino de excursão) */
+    #e2883f 100% /* Laranja-Por-do-Sol (rodape) */
   );
   background-repeat: no-repeat;
   color: var(--text-primary-color);

@@ -28,7 +28,7 @@
   background: url("../../img/pagamentos-pessoas-mobile.png") no-repeat;
   background-size: cover;
   height: 182px;
-  grid-column: span 2;
+  grid-column: span 2; /* Esse span 2 e para a imagem cobrir as duas colunas */
 }
 
 @media screen and (min-width: 768px) {
