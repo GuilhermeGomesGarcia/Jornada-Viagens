@@ -1,5 +1,5 @@
 .destino__imagem-tokyo {
-  background: url("../img/Tokyo-mobile.jpg") no-repeat;
+  background: url("../../img/Tokyo-mobile.jpg") no-repeat;
   background-size: cover;
   height: 360px;
   width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .destino__imagem-osaka {
-  background: url("../img/Osaka-mobile.jpg") no-repeat;
+  background: url("../../img/Osaka-mobile.jpg") no-repeat;
   background-size: cover;
   height: 360px;
   width: 100%;
@@ -32,13 +32,13 @@
 
 @media screen and (min-width: 768px) {
   .destino__imagem-tokyo {
-    background: url("../img/Tokyo-tablet-desk.jpg") no-repeat;
+    background: url("../../img/Tokyo-tablet-desk.jpg") no-repeat;
     background-size: cover;
     height: 452px;
   }
 
   .destino__imagem-osaka {
-    background: url("../img/Osaka-tablet-desk.jpg") no-repeat;
+    background: url("../../img/Osaka-tablet-desk.jpg") no-repeat;
     background-size: cover;
     height: 452px;
   }

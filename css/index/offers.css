@@ -11,12 +11,30 @@
   box-sizing: border-box;
   border-radius: 16px;
   text-align: center;
-  background-color: black;
   color: var(--text-secondary-color);
+
+  overflow: hidden; /* Corta a imagem quando ela crescer */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.ofertas__card:hover {
+  /* Faz o card subir levemente */
+  transform: translateY(-8px);
+  /* Adiciona um brilho externo (Glow) que combina com o tema luxo */
+  box-shadow:
+    0 12px 24px rgba(49, 28, 240, 0.5),
+    0 0 15px rgb(12, 164, 121);
+  /* Essa escolha de cores foi no olho
+       acertei de primeira, me sinto realizado
+    */
 }
 
 .ofertas__card.japao {
-  background: url("../img/bg-card-japao.jpg") no-repeat;
+  background: url("../../img/bg-card-japao.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -24,7 +42,7 @@
 }
 
 .ofertas__card.san-andreas {
-  background: url("../img/bg-card-san-andreas.jpg") no-repeat;
+  background: url("../../img/bg-card-san-andreas.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -32,7 +50,7 @@
 }
 
 .ofertas__card.paraiba {
-  background: url("../img/bg-card-paraiba.jpg") no-repeat;
+  background: url("../../img/bg-card-paraiba.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -40,12 +58,17 @@
 }
 
 .ofertas__card.manaus {
-  background: url("../img/bg-card-manaus.jpg") no-repeat;
+  background: url("../../img/bg-card-manaus.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 1;
 }
+
+/* Aqui nos criamos uma sombra na imagem, 
+   sem ela a imagem fica muito brilhosa.
+   Em resumo, escurecemos ela, para 
+   deixar o texto mais evidente */
 .ofertas__card.japao::before,
 .ofertas__card.san-andreas::before,
 .ofertas__card.paraiba::before,
