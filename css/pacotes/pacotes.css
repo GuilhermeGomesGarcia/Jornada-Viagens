@@ -1,3 +1,5 @@
+/* --------------------- Secao Pacotes Hero --------------------- */
+
 .pacotes__hero {
   background: url(../../img/Banner-Japao.png) no-repeat;
   background-size: cover;
@@ -6,6 +8,7 @@
   height: 460px;
   position: relative;
   z-index: 1;
+  color: var(--text-secondary-color);
 }
 
 .pacotes__hero::before {
@@ -24,6 +27,7 @@
   flex-direction: column;
   gap: 102px;
   height: 330px;
+  margin-left: 40px;
 }
 
 .pacotes__hero-descricao .secao__titulo,
@@ -53,6 +57,35 @@
 .pacotes__hero-descricao .descricao__texto {
   height: 160px;
 }
+
+/* --------------------- Secao Pacotes Pagamentos --------------------- */
+
+.pacotes__pagamentos__descricao a {
+  width: 100%;
+}
+
+.pacotes__pagamentos__imagens {
+  margin-top: 24px;
+}
+
+.castelo {
+  background: url("../../img/Montagem-japao.png");
+  background-size: cover;
+}
+
+.torre {
+  background: url("../../img/Montagem-japao-2.png");
+  background-size: cover;
+}
+
+.pessoa {
+  background: url("../../img/Montagem-japao-3.png");
+  background-size: cover;
+  height: 182px;
+  grid-column: span 2;
+}
+
+/* --------------------- Medias Querys --------------------- */
 
 @media screen and (min-width: 768px) {
   .pacotes__hero {

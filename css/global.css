@@ -85,7 +85,7 @@ body.pacotes {
     /* #876F86 100%  */
   );
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  color: var(--text-primary-color);
 }
 
 section {
