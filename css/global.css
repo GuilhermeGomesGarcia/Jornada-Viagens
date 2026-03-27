@@ -80,12 +80,12 @@ body.pacotes {
   background: linear-gradient(
     180deg,
     #fdfdfd 0%, /* Branco-Pérola muito claro (topo) */
-    #f7f2f1 50%, /* Tom médio suave */
-    #f1e9e6 100% /* Rosa-Pálido Empoeirado (base, antes do rodapé) */
+    #F7CFE1 50%, /* Rosa-Pálido  (base, antes do rodapé) */
+    #FFB7C5 75% /* Rosa-Sakura (destino de excursão) */
+    /* #876F86 100%  */
   );
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* color: #0400fd; */
+  /* background-attachment: fixed; */
 }
 
 section {
