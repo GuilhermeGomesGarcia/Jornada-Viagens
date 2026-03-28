@@ -38,7 +38,6 @@
   --font-size-title-medium: 2.3rem;
   --font-size-title-large: 2.5rem;
   --font-size-title-extra-large: 3rem;
-
 }
 
 /*  CSS RESET */
@@ -60,13 +59,10 @@ body {
   background: linear-gradient(
     180deg,
     #0f172a 0%,
-    /* Azul Petróleo Escuro (Topo) */ #1e3b3b 50%,
+    /* Azul Petróleo Escuro (Base) */ #2c7e6e 10%,
+    /* Azul Petróleo Escuro (Topo) */ #26486f 50%,
     /* Azul Marinho Médio (Meio) */ #0f172a 100%
-      /* Retorno ao tom mais escuro (Base) */
   );
-
-  /* Fixa o fundo para um efeito parallax elegante ao rolar e sem repetir */
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -79,10 +75,11 @@ body {
 body.pacotes {
   background: linear-gradient(
     180deg,
-    #fdfdfd 0%, /* Branco-Pérola muito claro (topo) */
-    #F7CFE1 20%, /* Rosa-Pálido  (base, antes do rodapé) */
-    #FFB7C5 45%, /* Rosa-Sakura (destino de excursão) */
-    #e2883f 100% /* Laranja-Por-do-Sol (rodape) */
+    #fdfdfd 0%,
+    /* Branco-Pérola muito claro (topo) */ #f7cfe1 20%,
+    /* Rosa-Pálido  (base, antes do rodapé) */ #ffb7c5 45%,
+    /* Rosa-Sakura (destino de excursão) */ #e2883f 100%
+      /* Laranja-Por-do-Sol (rodape) */
   );
   background-repeat: no-repeat;
   color: var(--text-primary-color);
