@@ -1,0 +1,264 @@
+.blog__hero {
+  background: url(../../img/banner-blog-mobile.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 460px;
+  color: var(--text-secondary-color);
+}
+
+.blog__hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.blog__tokyo-1 {
+  background: url(../../img/blog-mobile-Tokyo-1.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+  margin-top: 45px;
+  margin-bottom: 32px;
+}
+
+.blog__tokyo-2 {
+  background: url(../../img/blog-mobile-Tokyo-2.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+  margin-top: 200px;
+  margin-bottom: 52px;
+}
+
+.destino__imagem-hiroshima {
+  background: url("../../img/Hiroshima-mobile.png") no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+  margin: 40px 0 24px 0;
+}
+
+.destino__imagem-kyoto {
+  background: url("../../img/Kyoto-mobile.png") no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+  margin: 40px 0 24px 0;
+}
+
+.descricao__texto.chegada {
+  margin-bottom: 100px;
+}
+
+.descricao__texto.explorando {
+  margin-bottom: 40rem;
+}
+
+.descricao__texto.compras {
+  margin-bottom: 18.125rem;
+}
+
+.descricao__texto.gastronomia {
+  margin-bottom: 6.25rem;
+}
+
+.descricao__texto.concluindo {
+  margin-bottom: 9.375rem;
+}
+
+.descricao__texto.hiroshima {
+  margin-bottom: 6.25rem;
+}
+
+.descricao__texto.kyoto {
+  margin-bottom: 4.1rem;
+}
+
+.destino__rodape.kyoto-botao {
+  margin-bottom: 5.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__hero {
+    background: url(../../img/banner-blog-tablet.png) no-repeat;
+    background-size: cover;
+    height: 620px;
+  }
+
+  .blog__hero-descricao {
+    width: 579px;
+    height: 303px;
+  }
+
+  .blog__hero-descricao .secao__titulo,
+  .blog__hero-descricao .descricao__texto {
+    text-align: left;
+    margin-right: 30px;
+  }
+
+  .blog__destino__cabecalho-chegada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .blog__destino__cabecalho-chegada-txt {
+    width: 312px;
+    height: 360px;
+    margin-top: 40px;
+  }
+
+  .blog__tokyo-1 {
+    background: url(../../img/blog-tablet-Tokyo-1.png) no-repeat;
+    background-size: cover;
+    width: 312px;
+    height: 360px;
+    margin-bottom: 50px;
+  }
+
+  .descricao__titulo.acomodacao-titulo {
+    margin-top: 30px;
+  }
+
+  .descricao__texto.explorando {
+    margin-bottom: 22rem;
+  }
+
+  .descricao__texto.compras {
+    margin-bottom: 12.125rem;
+  }
+
+  .descricao__texto.concluindo {
+    margin-bottom: 7.375rem;
+  }
+
+  .blog__tokyo-2 {
+    background: url(../../img/blog-tablet-tokyo-2.png) no-repeat;
+    background-size: cover;
+    margin-top: 130px;
+  }
+
+  .destino__imagem-hiroshima {
+    background: url("../../img/Hiroshima-tablet.png") no-repeat;
+    background-size: cover;
+  }
+
+  .destino__imagem-kyoto {
+    background: url("../../img/Kyoto-tablet.png") no-repeat;
+    background-size: cover;
+  }
+
+  .descricao__texto.hiroshima {
+    margin-bottom: 0;
+  }
+
+  .descricao__texto.kyoto {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog__tokyo-1 {
+    width: 60%;
+    height: 360px;
+  }
+
+  .descricao__texto.explorando {
+    margin-bottom: 19rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog__hero {
+    background: url(../../img/banner-blog-desktop.png) no-repeat;
+    background-size: cover;
+    height: 810px;
+  }
+
+  .blog__hero-descricao {
+    width: 70%;
+    height: 303px;
+  }
+
+  .blog__tokyo-1 {
+    background: url(../../img/blog-desktop-Tokyo-1.png) no-repeat;
+    background-size: cover;
+    width: 588px;
+    margin: 0;
+  }
+
+  .blog__tokyo-2 {
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .descricao__texto.chegada {
+    width: 588px;
+  }
+
+  .descricao__texto.explorando {
+    margin: 32px 0 160px 0;
+  }
+
+  .descricao__texto.compras {
+    margin-bottom: 80px;
+  }
+
+  .descricao__texto.gastronomia {
+    margin-bottom: 20px;
+  }
+
+  .descricao__texto.concluindo {
+    margin-bottom: 40px;
+  }
+
+  .destino__items.blog__destinos {
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+  }
+
+  .blog__destinos-item {
+    width: 384px;
+  }
+
+  .destino__imagem-hiroshima,
+  .destino__imagem-kyoto,
+  .blog-osaka {
+    width: 384px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .descricao__texto.hiroshima,
+  .descricao__texto.kyoto,
+  .descricao__texto.osaka {
+    margin-bottom: 80px;
+  }
+
+  .destino__rodape.blog__botao {
+    margin: 40px;
+    width: 280px;
+  }
+
+  .destino__rodape.osaka-botao {
+    margin-top: 90px;
+    margin-right: 120px;
+  }
+
+  .rodape__conteudo__descricao .descricao__texto,
+  .rodape__conteudo__redes .descricao__texto {
+    font-size: var(--font-size-text);
+  }
+
+  .rodape__conteudo__descricao-logo {
+    width: 320px;
+    height: 60px;
+  }
+}

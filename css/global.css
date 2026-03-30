@@ -76,12 +76,30 @@ body.pacotes {
   background: linear-gradient(
     180deg,
     #fdfdfd 0%,
-    /* Branco-Pérola muito claro (topo) */ #f7cfe1 20%,
+    /* Branco-Pérola muito claro (topo) */ #fce7f0 20%,
     /* Rosa-Pálido  (base, antes do rodapé) */ #ffb7c5 45%,
     /* Rosa-Sakura (destino de excursão) */ #e2883f 100%
       /* Laranja-Por-do-Sol (rodape) */
   );
   background-repeat: no-repeat;
+  color: var(--text-primary-color);
+}
+
+body.blog {
+  /* Define o gradiente de cima para baixo */
+  background: linear-gradient(
+    180deg,
+    #fdf0e1 0%,
+    /* Bege Claro Quente (início abaixo do banner) */ #bcc8bf 50%,
+    /* Cinza Esverdeado Pálido */ #9bc5c3 100% /* Turquesa Suave */
+  );
+
+  /* Garante que o fundo não se repita e cubra toda a área */
+  background-repeat: no-repeat;
+
+  /* Define uma altura mínima para cobrir todo o conteúdo */
+  min-height: 100vh;
+  margin: 0; /* Remove margens padrão */
   color: var(--text-primary-color);
 }
 
