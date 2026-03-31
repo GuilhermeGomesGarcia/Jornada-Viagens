@@ -161,6 +161,14 @@
   .descricao__texto.kyoto {
     margin-bottom: 0;
   }
+
+  .destino__rodape.blog__botao {
+    margin: 20px 370px 20px 0;
+  }
+
+  .destino__rodape.blog__botao:last-child {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -171,6 +179,10 @@
 
   .descricao__texto.explorando {
     margin-bottom: 19rem;
+  }
+
+  .destino__rodape.blog__botao {
+    margin-right: 630px;
   }
 }
 
@@ -232,6 +244,7 @@
   .destino__imagem-kyoto,
   .blog-osaka {
     width: 384px;
+    height: 360px;
     background-size: cover;
     background-position: center;
   }
@@ -243,12 +256,12 @@
   }
 
   .destino__rodape.blog__botao {
-    margin: 40px;
+    margin-right: 40px;
     width: 280px;
   }
 
   .destino__rodape.osaka-botao {
-    margin-top: 90px;
+    margin-top: 50px;
     margin-right: 120px;
   }
 

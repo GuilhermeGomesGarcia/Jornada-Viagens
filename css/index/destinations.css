@@ -53,6 +53,10 @@
     margin-right: 370px;
   }
 
+  .destino__rodape .destino__botao-osaka {
+    margin-top: 48px;
+  }
+
   .destino__rodape,
   .botao:nth-child(2) {
     margin-top: 24px;
@@ -62,6 +66,10 @@
 @media screen and (min-width: 1024px) {
   .destino__rodape .destino__botao {
     margin-right: 630px;
+  }
+
+  .destino__rodape .destino__botao-osaka {
+    margin-top: 24px;
   }
 }
 
