@@ -1,0 +1,23 @@
+.contato__hero {
+  background: url(../../img/banner-contato-mobile.png) no-repeat center;
+  background-size: cover;
+}
+
+.contato__hero-descricao h2 {
+  font-size: var(--font-size-title-large);
+  text-align: left;
+  line-height: 52px;
+}
+
+.contato__hero-descricao .secao__titulo hr {
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.contato__hero-descricao .descricao__texto {
+  padding: 0;
+  text-align: left;
+  width: 312px;
+  margin-left: 70px;
+}

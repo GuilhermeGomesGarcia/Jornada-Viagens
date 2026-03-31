@@ -103,6 +103,22 @@ body.blog {
   color: var(--text-primary-color);
 }
 
+body.contato {
+  /* Define o gradiente de cima para baixo */
+  background: linear-gradient(
+    180deg,
+    #f0e5d3 0%, /* Cor do topo (bege pálido) */ 
+    #dcc4ac 40%, /* Cor intermediária suave */
+    #c49b80 75%, /* Cor intermediária mais profunda */
+    #b27a5f 100% /* Cor da base (terracota quente) */
+  );
+  
+  /* Garante que o fundo não se repita e cubra toda a área */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; /* Opcional: o gradiente rola com a página */
+}
+
 section {
   width: 312px;
   margin: 0 auto;
