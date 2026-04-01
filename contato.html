@@ -101,11 +101,11 @@
       </div>
     </section>
 
-    <section class="destinos pacotes__destinos">
-      <div class="secao__titulo">
-        <h2>Preencha o formulário:</h2>
+    <section class="destinos contato__destinos" role="region">
+      <div class="secao__titulo" aria-labelledby="titulo-formulario">
+        <h2 id="titulo-formulario">Preencha o formulário:</h2>
         <hr />
-        <p class="descricao__texto">
+        <p class="descricao__texto contato__destinos-descricao">
           Temos uma equipe sempre em prontidão para resolver suas dúvidas,
           problemas, trazer dicas e orientações objetivas para tornar sua
           experiência o mais prazerosa e tranquila possível. Preencha seus dados
@@ -121,25 +121,32 @@
         <input
           placeholder="Digite seu nome"
           type="text"
-          id="nome"
+          id="label-nome"
           name="nome"
+          required
+        />
+        <label class="descricao__texto" for="telefone">Telefone:</label>
+        <input
+          placeholder="Digite seu telefone"
+          type="tel"
+          id="label-telefone"
+          name="telefone"
           required
         />
 
         <label class="descricao__texto" for="email">E-mail:</label>
-        <input 
+        <input
           placeholder="Digite seu melhor email"
           type="email"
-          id="email"
+          id="label-email"
           name="email"
           required
         />
-
         <label class="descricao__texto" for="assunto">Assunto:</label>
         <input
           placeholder="Digite o assunto da sua mensagem"
           type="text"
-          id="assunto"
+          id="label-assunto"
           name="assunto"
           required
         />
@@ -147,7 +154,7 @@
         <label class="descricao__texto" for="mensagem">Mensagem:</label>
         <textarea
           placeholder="Digite sua mensagem"
-          id="mensagem"
+          id="label-mensagem"
           name="mensagem"
           rows="5"
         ></textarea>
