@@ -21,3 +21,63 @@
   width: 312px;
   margin-left: 70px;
 }
+
+.contato__hero__rodape .background-img {
+  background: url(../../img/banner-contato-rodape-mobile.png) no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+/* Estilização geral de todos os campos de entrada e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px 0;
+  margin-bottom: 25px;
+  border: none; /* Remove as bordas laterais e superior */
+  border-bottom: 2px solid var(--background-secondary-color);
+  background-color: transparent; /* Remove fundos indesejados */
+  outline: none; /* Remove o contorno padrão ao clicar */
+  font-size: 16px;
+  color: var(--background-tertiary-color);
+  transition: border-color 0.3s ease;
+}
+
+/* Efeito ao clicar no campo (Igual ao campo "Seu nome" da Imagem 1) */
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Estilização específica para o campo de mensagem (Assunto/Textarea) */
+textarea {
+  min-height: 100px;
+  resize: none; /* Impede que o usuário deforme o layout */
+  border: 1px solid var(--background-secondary-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.botao-formulario {
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.botao-formulario:hover {
+  background-color: #d32f2f;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--background-tertiary-color);
+}

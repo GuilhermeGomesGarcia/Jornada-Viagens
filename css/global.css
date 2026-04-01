@@ -109,8 +109,8 @@ body.contato {
     180deg,
     #f0e5d3 0%, /* Cor do topo (bege pálido) */ 
     #dcc4ac 40%, /* Cor intermediária suave */
-    #c49b80 75%, /* Cor intermediária mais profunda */
-    #b27a5f 100% /* Cor da base (terracota quente) */
+    #d18159 75%, /* Cor intermediária mais profunda */
+    #c75a23 100% /* Cor da base (terracota quente) */
   );
   
   /* Garante que o fundo não se repita e cubra toda a área */
