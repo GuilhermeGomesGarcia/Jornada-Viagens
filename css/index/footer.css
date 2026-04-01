@@ -67,4 +67,8 @@
   .rodape__conteudo__descricao {
     text-align: start;
   }
+
+  .rodape__conteudo__redes {
+    margin-top: 50px;
+  }
 }
