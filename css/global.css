@@ -38,7 +38,6 @@
   --font-size-title-medium: 2.3rem;
   --font-size-title-large: 2.5rem;
   --font-size-title-extra-large: 3rem;
-
 }
 
 /*  CSS RESET */
@@ -60,13 +59,10 @@ body {
   background: linear-gradient(
     180deg,
     #0f172a 0%,
-    /* Azul Petróleo Escuro (Topo) */ #1e3b3b 50%,
+    /* Azul Petróleo Escuro (Base) */ #2c7e6e 10%,
+    /* Azul Petróleo Escuro (Topo) */ #26486f 50%,
     /* Azul Marinho Médio (Meio) */ #0f172a 100%
-      /* Retorno ao tom mais escuro (Base) */
   );
-
-  /* Fixa o fundo para um efeito parallax elegante ao rolar e sem repetir */
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -79,13 +75,48 @@ body {
 body.pacotes {
   background: linear-gradient(
     180deg,
-    #fdfdfd 0%, /* Branco-Pérola muito claro (topo) */
-    #F7CFE1 20%, /* Rosa-Pálido  (base, antes do rodapé) */
-    #FFB7C5 45%, /* Rosa-Sakura (destino de excursão) */
-    #e2883f 100% /* Laranja-Por-do-Sol (rodape) */
+    #fdfdfd 0%,
+    /* Branco-Pérola muito claro (topo) */ #fce7f0 20%,
+    /* Rosa-Pálido  (base, antes do rodapé) */ #ffb7c5 45%,
+    /* Rosa-Sakura (destino de excursão) */ #e2883f 100%
+      /* Laranja-Por-do-Sol (rodape) */
   );
   background-repeat: no-repeat;
   color: var(--text-primary-color);
+}
+
+body.blog {
+  /* Define o gradiente de cima para baixo */
+  background: linear-gradient(
+    180deg,
+    #fdf0e1 0%,
+    /* Bege Claro Quente (início abaixo do banner) */ #bcc8bf 50%,
+    /* Cinza Esverdeado Pálido */ #9bc5c3 100% /* Turquesa Suave */
+  );
+
+  /* Garante que o fundo não se repita e cubra toda a área */
+  background-repeat: no-repeat;
+
+  /* Define uma altura mínima para cobrir todo o conteúdo */
+  min-height: 100vh;
+  margin: 0; /* Remove margens padrão */
+  color: var(--text-primary-color);
+}
+
+body.contato {
+  /* Define o gradiente de cima para baixo */
+  background: linear-gradient(
+    180deg,
+    #f0e5d3 0%, /* Cor do topo (bege pálido) */ 
+    #dcc4ac 40%, /* Cor intermediária suave */
+    #d18159 75%, /* Cor intermediária mais profunda */
+    #c75a23 100% /* Cor da base (terracota quente) */
+  );
+  
+  /* Garante que o fundo não se repita e cubra toda a área */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; /* Opcional: o gradiente rola com a página */
 }
 
 section {

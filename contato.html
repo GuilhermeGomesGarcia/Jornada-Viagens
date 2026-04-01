@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jornada Viagens, uma agência apaixonada por criar viagens inesquecíveis"
+    />
+
+    <meta name="og:title" content="Jornada Viagens" />
+    <meta
+      name="og:description"
+      content="Jornada Viagens, uma agência apaixonada por criar viagens inesquecíveis"
+    />
+    <meta
+      name="og:image"
+      content="https://guilhermegomesgarcia.github.io/Jornada-Viagens/img/Logo-branco-rodape.png"
+    />
+    <meta name="og:type" content="website" />
+    <meta
+      name="og:url"
+      content="https://guilhermegomesgarcia.github.io/Jornada-Viagens"
+    />
+
+    <link rel="icon" href="fav-icon.svg" type="xml/svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jornada Viagens</title>
+  </head>
+
+  <body class="contato">
+    <header class="cabecalho">
+      <a
+        href="index.html"
+        title="Voltar para a página inicial"
+        class="cabecalho__logo"
+      >
+        <img
+          src="./img/Logo-mobile-branca.png"
+          class="logo__mobile"
+          alt="Logo da Jornada Viagens na cor branca"
+        />
+
+        <img
+          src="./img/logo-desktop-branca.png"
+          class="logo__desktop"
+          alt="Bússola do logo da Jornada Viagens na cor branca"
+        />
+      </a>
+
+      <div class="cabecalho__menu-hamburguer">
+        <label
+          for="cabecalho__menu-hamburguer-checkbox"
+          class="cabecalho__menu-hamburguer__label"
+        >
+          <img src="./img/menu.png" alt="menu hamburguer" />
+        </label>
+        <input
+          type="checkbox"
+          id="cabecalho__menu-hamburguer-checkbox"
+          hidden
+        />
+        <nav class="cabecalho__menu-hamburguer__nav">
+          <ul class="cabecalho__menu-hamburguer__lista">
+            <li>
+              <a href="blog.html" target="_self" title="Acessar página do blog"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="pacotes.html"
+                target="_self"
+                title="Acessar página de pacotes de viagem"
+                >Pacotes de viagem</a
+              >
+            </li>
+            <li>
+              <a
+                href="contato.html"
+                target="_self"
+                title="Acessar página de contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero contato__hero" role="banner">
+      <div class="contato__hero-descricao">
+        <div class="secao__titulo">
+          <h2>Entre em contato!</h2>
+          <hr />
+        </div>
+        <h3 class="descricao__texto">
+          Dúvidas, sugestões, problemas para resolver? Temos uma equipe de
+          plantão para ajudar você!
+        </h3>
+      </div>
+    </section>
+
+    <section class="destinos contato__destinos" role="region">
+      <div class="secao__titulo" aria-labelledby="titulo-formulario">
+        <h2 id="titulo-formulario">Preencha o formulário:</h2>
+        <hr />
+        <p class="descricao__texto contato__destinos-descricao">
+          Temos uma equipe sempre em prontidão para resolver suas dúvidas,
+          problemas, trazer dicas e orientações objetivas para tornar sua
+          experiência o mais prazerosa e tranquila possível. Preencha seus dados
+          que vamos retornar seu contato conforme a urgência do seu chamado.
+          Pode confiar!
+        </p>
+      </div>
+    </section>
+
+    <form action=".">
+      <div class="formulario">
+        <label class="descricao__texto" for="nome">Nome:</label>
+        <input
+          placeholder="Digite seu nome"
+          type="text"
+          id="label-nome"
+          name="nome"
+          required
+        />
+        <label class="descricao__texto" for="telefone">Telefone:</label>
+        <input
+          placeholder="Digite seu telefone"
+          type="tel"
+          id="label-telefone"
+          name="telefone"
+          required
+        />
+
+        <label class="descricao__texto" for="email">E-mail:</label>
+        <input
+          placeholder="Digite seu melhor email"
+          type="email"
+          id="label-email"
+          name="email"
+          required
+        />
+        <label class="descricao__texto" for="assunto">Assunto:</label>
+        <input
+          placeholder="Digite o assunto da sua mensagem"
+          type="text"
+          id="label-assunto"
+          name="assunto"
+          required
+        />
+
+        <label class="descricao__texto" for="mensagem">Mensagem:</label>
+        <textarea
+          placeholder="Digite sua mensagem"
+          id="label-mensagem"
+          name="mensagem"
+          rows="5"
+        ></textarea>
+
+        <button class="botao botao-formulario" type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <section class="hero__rodape contato__hero__rodape" role="banner">
+      <div class="background-img"></div>
+    </section>
+
+    <footer class="rodape">
+      <address class="rodape__conteudo__descricao">
+        <img
+          class="rodape__conteudo__descricao-logo"
+          src="./img/Logo-branco-rodape.png"
+          alt="Logo Jornada Viagens"
+        />
+        <br />
+        <small class="descricao__texto"
+          >Horário de atendimento: 08h - 20h (Segunda a Sábado)</small
+        >
+        <br />
+        <small class="descricao__texto"
+          >Desenvolvido por Alura. Projeto fictício sem fins comerciais.</small
+        >
+        <br />
+      </address>
+
+      <address class="rodape__conteudo__redes">
+        <small class="descricao__texto">Acesse nossas redes:</small>
+        <br />
+        <a href="#" target="_blank" title="Entre em contato via whatsapp"
+          ><img
+            class="whatsapp"
+            src="./img/icone-whatsapp.png"
+            alt="Icone do whatsapp na cor branca"
+        /></a>
+        <a
+          href="#"
+          target="_blank"
+          title="Acesse o Instagram do Jornada Viagens"
+          ><img
+            class="instagram"
+            src="./img/icone-instagram.png"
+            alt="Icone do instagram na cor branca"
+        /></a>
+        <a href="#" target="_blank" title="Acesse o Twitter do Jornada Viagens"
+          ><img
+            class="twitter"
+            src="./img/icone-twitter.png"
+            alt="Icone do twitter na cor branca"
+        /></a>
+      </address>
+    </footer>
+  </body>
+</html>
