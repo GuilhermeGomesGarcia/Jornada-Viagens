@@ -111,63 +111,63 @@
       <div class="secao__titulo" aria-labelledby="titulo-formulario">
         <h2 id="titulo-formulario">Preencha o formulário:</h2>
         <hr />
-        <p class="descricao__texto contato__destinos-descricao">
-          Temos uma equipe sempre em prontidão para resolver suas dúvidas,
-          problemas, trazer dicas e orientações objetivas para tornar sua
-          experiência o mais prazerosa e tranquila possível. Preencha seus dados
-          que vamos retornar seu contato conforme a urgência do seu chamado.
-          Pode confiar!
-        </p>
       </div>
+      <form class="" action=".">
+        <fieldset>
+          <legend class="descricao__texto contato__destinos-descricao">
+            Temos uma equipe sempre em prontidão para resolver suas dúvidas,
+            problemas, trazer dicas e orientações objetivas para tornar sua
+            experiência o mais prazerosa e tranquila possível. Preencha seus
+            dados que vamos retornar seu contato conforme a urgência do seu
+            chamado. Pode confiar!
+          </legend>
+          <div class="formulario">
+            <label class="descricao__texto" for="nome">Nome:</label>
+            <input
+              placeholder="Digite seu nome"
+              type="text"
+              id="nome"
+              name="nome"
+              required
+            />
+            <label class="descricao__texto" for="telefone">Telefone:</label>
+            <input
+              placeholder="Digite seu telefone"
+              type="text"
+              id="telefone"
+              name="telefone"
+              required
+            />
+
+            <label class="descricao__texto" for="email">E-mail:</label>
+            <input
+              placeholder="Digite seu melhor email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label class="descricao__texto" for="assunto">Assunto:</label>
+            <input
+              placeholder="Digite o assunto da sua mensagem"
+              type="text"
+              id="assunto"
+              name="assunto"
+            />
+
+            <label class="descricao__texto" for="mensagem">Mensagem:</label>
+            <textarea
+              placeholder="Digite sua mensagem"
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+            ></textarea>
+
+            <button class="botao botao-formulario" type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
     </section>
-
-    <form action=".">
-      <div class="formulario">
-        <label class="descricao__texto" for="nome">Nome:</label>
-        <input
-          placeholder="Digite seu nome"
-          type="text"
-          id="label-nome"
-          name="nome"
-          required
-        />
-        <label class="descricao__texto" for="telefone">Telefone:</label>
-        <input
-          placeholder="Digite seu telefone"
-          type="tel"
-          id="label-telefone"
-          name="telefone"
-          required
-        />
-
-        <label class="descricao__texto" for="email">E-mail:</label>
-        <input
-          placeholder="Digite seu melhor email"
-          type="email"
-          id="label-email"
-          name="email"
-          required
-        />
-        <label class="descricao__texto" for="assunto">Assunto:</label>
-        <input
-          placeholder="Digite o assunto da sua mensagem"
-          type="text"
-          id="label-assunto"
-          name="assunto"
-          required
-        />
-
-        <label class="descricao__texto" for="mensagem">Mensagem:</label>
-        <textarea
-          placeholder="Digite sua mensagem"
-          id="label-mensagem"
-          name="mensagem"
-          rows="5"
-        ></textarea>
-
-        <button class="botao botao-formulario" type="submit">Enviar</button>
-      </div>
-    </form>
 
     <section class="hero__rodape contato__hero__rodape" role="banner">
       <div class="background-img"></div>
@@ -226,5 +226,6 @@
         /></a>
       </address>
     </footer>
+    <script src="form.js"></script>
   </body>
 </html>

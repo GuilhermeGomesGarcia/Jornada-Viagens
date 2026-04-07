@@ -54,6 +54,12 @@ ul {
   list-style: none;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   /* Gradiente linear suave do topo para a base */
   background: linear-gradient(
@@ -107,12 +113,13 @@ body.contato {
   /* Define o gradiente de cima para baixo */
   background: linear-gradient(
     180deg,
-    #f0e5d3 0%, /* Cor do topo (bege pálido) */ 
-    #dcc4ac 40%, /* Cor intermediária suave */
-    #d18159 75%, /* Cor intermediária mais profunda */
-    #c75a23 100% /* Cor da base (terracota quente) */
+    #f0e5d3 0%,
+    /* Cor do topo (bege pálido) */ #dcc4ac 40%,
+    /* Cor intermediária suave */ #d18159 75%,
+    /* Cor intermediária mais profunda */ #c75a23 100%
+      /* Cor da base (terracota quente) */
   );
-  
+
   /* Garante que o fundo não se repita e cubra toda a área */
   background-repeat: no-repeat;
   background-size: cover;
